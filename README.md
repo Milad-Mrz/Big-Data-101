@@ -19,10 +19,10 @@ One key difference between big data and data mining is that big data often refer
 **Main topics in big data:**
 <br/>
 
-**1-Data storage:** One of the main challenges of big data is finding ways to store and manage large datasets. This may involve using distributed storage systems, such as Hadoop or NoSQL databases.
+**1-Data storage:** One of the main challenges of big data is finding ways to store and manage large datasets. This may involve using distributed storage systems, such as **Hadoop** or **NoSQL** databases.
 <br/>
 
-**2-Data processing:** Processing and analyzing big data often requires the use of specialized tools and techniques, such as distributed processing frameworks like MapReduce or Apache Spark.
+**2-Data processing:** Processing and analyzing big data often requires the use of specialized tools and techniques, such as distributed processing frameworks like **MapReduce** or **Apache Spark**.
 <br/>
 
 **3-Data visualization:** Visualizing big data can help make it easier to understand and extract insights from the data. There are a variety of tools and techniques for visualizing big data, including dashboards and data visualization software.
