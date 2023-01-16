@@ -1,4 +1,4 @@
-# Big_Data_101
+# Big-Data-101
 
 **What is big data?** 
 <br/>
