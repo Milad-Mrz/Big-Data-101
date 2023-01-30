@@ -38,7 +38,9 @@ One key difference between big data and data mining is that big data often refer
 <br/>
 <br/>
 
-**1- The "five V's" concept:** 
+---
+
+**1- Data 5V's concept:** 
 
 It refers to the five characteristics that define big data: Volume, Velocity, Variety, Veracity, and Value.
 
@@ -50,7 +52,7 @@ It refers to the five characteristics that define big data: Volume, Velocity, Va
 
 **2- Framework:** 
 
-A framework in big data refers to a set of tools and technologies that are used to collect, store, process, and analyze large amounts of data. There are several different big data frameworks available, each with their own strengths and weaknesses. Some of the most popular big data frameworks include:
+A framework refers to a set of tools and technologies that are used to 1-collect, 2-store, 3-process, and 4-analyze large amounts of data. There are several different big data frameworks available, each with their own strengths and weaknesses. Some of the most popular big data frameworks include:
 
 Hadoop: an open-source framework that allows for distributed storage and processing of large data sets using a cluster of commodity hardware.<br/>
 
@@ -71,9 +73,10 @@ Samza: a distributed stream processing framework that is built on top of Apache 
 These are just a few examples and many more are available in the market, the choice of a framework depends on the use case, the size, the type of data, and the requirement of the organization. <br/>
 
 
-**3- Hadoop and Spark in better detail:**
+**Hadoop and Spark in better detail:**
 
 **Hadoop:** 
+
 It is an open-source framework that allows for distributed storage and processing of large data sets using a cluster of commodity hardware. It is built on top of the Hadoop Distributed File System (HDFS), which is a distributed file system that allows for the storage of large data sets across multiple machines. Hadoop also includes a processing engine called MapReduce, which allows for the parallel processing of large data sets across a cluster of machines.
 
 Hadoop is well suited for batch processing of large data sets, and it is often used in big data scenarios where data is stored in HDFS, and processed using MapReduce. Hadoop also provides a rich ecosystem of tools and technologies, such as Pig, Hive, and HBase, that can be used for data processing, analysis, and storage.
@@ -103,9 +106,171 @@ Spark is an example of a framework that uses in-memory processing, where it stor
 <br/>
 <br/>
 
-**(O) Cache reference:** 
-Cache reference refers to the act of looking up data in a cache memory, a high-speed memory storage that temporarily holds frequently accessed data for quick access. The cache reference process helps to speed up data retrieval by reducing the number of memory accesses required to access the data.
+**(O) Cache reference:** Cache reference refers to the act of looking up data in a cache memory, a high-speed memory storage that temporarily holds frequently accessed data for quick access. The cache reference process helps to speed up data retrieval by reducing the number of memory accesses required to access the data.
 
 <br/>
 <br/>
 
+
+**Distributed File Systems:**
+
+1. NFS (Network File System): NFS is a network file system protocol that allows a user on a client computer to access files over a network as if they were stored on their local computer. NFS is simple to set up and use and is widely supported across many operating systems.
+
+Pros:
+
+Easy to set up and use
+
+Widely supported across many operating systems
+
+Cons:
+
+Not designed for large scale data storage and retrieval
+
+Poor performance with large data sets
+
+Limited security and reliability features
+
+2. AFS (Andrew File System): AFS is a distributed file system developed at Carnegie Mellon University that provides a transparent and scalable way to store and access files over a network. AFS uses a distributed architecture to ensure high availability and scalability.
+
+Pros:
+
+Distributed architecture for high availability and scalability
+Supports large data sets
+Supports file sharing and collaboration
+
+Cons:
+
+Complex to set up and manage
+
+Limited support for newer operating systems
+
+3. Coda: Coda is a distributed file system that provides a high-performance and scalable way to store and access files over a network. Coda is designed for use in mobile and wireless environments, where the network may be unreliable.
+
+Pros:
+
+Designed for use in mobile and wireless environments
+High-performance and scalable
+
+Cons:
+
+Complex to set up and manage
+
+Limited support and development
+
+**MapReduce:**
+
+1. Google MapReduce: MapReduce is a programming model developed by Google for processing large data sets in a parallel and distributed manner. Google MapReduce was the first implementation of the MapReduce programming model and has been widely adopted and imitated by other systems.
+
+Pros:
+
+Simplifies the process of writing parallel and distributed data processing applications
+
+Can handle very large data sets
+
+Well-documented and widely used
+
+Cons:
+
+Limited to batch processing of data
+
+Not suitable for real-time data processing
+
+2. Hadoop MapReduce: Hadoop MapReduce is an open-source implementation of the MapReduce programming model that is part of the Hadoop ecosystem. Hadoop MapReduce allows for the processing of large data sets in a parallel and distributed manner.
+
+Pros:
+
+Open-source and widely adopted
+
+Part of a larger ecosystem of big data tools and technologies
+
+Can handle very large data sets
+
+Cons:
+
+Limited to batch processing of data
+
+Can be slow and resource-intensive for certain types of workloads
+
+**Google BigTable vs HBase vs Pig:**
+
+1. Google BigTable: BigTable is a distributed NoSQL database developed by Google that provides a high-performance and scalable way to store and access large amounts of structured data. BigTable is designed to handle very large data sets and provides a flexible schema-less data model.
+
+Pros:
+
+High-performance and scalable
+
+Designed to handle very large data sets
+
+Flexible schema-less data model
+
+Cons:
+
+Proprietary technology developed by Google
+
+Limited support for data processing and analysis outside of Google's ecosystem
+
+2. HBase: HBase is an open-source, NoSQL database that is part of the Hadoop ecosystem. HBase provides a distributed and scalable way to store and access large amounts of structured data. HBase is designed to be compatible with the Hadoop Distributed File System (HDFS) and can be used in conjunction with other Hadoop tools and technologies.
+
+Pros:
+
+Open-source and widely adopted
+
+Part of a larger ecosystem of big data tools and technologies
+
+Distributed and scalable
+
+Cons:
+
+Can have performance issues with large data sets and complex queries
+
+Steep learning curve and complex configuration
+
+3. Pig: Pig is a high-level platform for creating MapReduce programs used with Hadoop. Pig provides a higher-level data processing language that abstracts away much of the complexity of writing MapReduce programs.
+
+Pros:
+
+High-level data processing language that abstracts away much of the complexity of MapReduce programming
+
+Integrates well with the Hadoop ecosystem
+
+Cons:
+
+Performance can be slow for certain types of workloads
+
+Steep learning curve for those unfamiliar with the Pig Latin language
+
+**HIVE:**
+
+Hive is a data warehousing and SQL-like query language for Hadoop that provides a high-level, flexible and scalable way to perform data analysis on large data sets. Hive provides an interface for querying data stored in the Hadoop Distributed File System (HDFS) and can also be used in conjunction with other Hadoop tools and technologies.
+
+Pros:
+
+Provides a high-level, flexible, and scalable way to perform data analysis on large data sets
+
+Integrates well with the Hadoop ecosystem
+
+Supports SQL-like query language
+
+Cons:
+
+Performance can be slow for certain types of workloads
+
+Steep learning curve for those unfamiliar with HiveQL language
+
+**YARN:**
+
+YARN (Yet Another Resource Negotiator) is a resource management system for Hadoop that provides a centralized platform for managing and allocating computing resources in a Hadoop cluster. YARN allows multiple data processing frameworks, such as MapReduce, Spark, and others, to run on the same cluster, improving resource utilization and enabling a more flexible and scalable big data processing environment.
+
+Pros:
+
+Centralized platform for managing and allocating computing resources in a Hadoop cluster
+
+Allows multiple data processing frameworks to run on the same cluster
+
+Improves resource utilization and enables a more flexible and scalable big data processing environment
+
+Cons:
+
+Complex to set up and manage
+
+Overhead for resource management can impact performance for certain types of workloads
